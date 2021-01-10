@@ -10,7 +10,7 @@ public class WriteIFs
 	int x;
 	int tt_t;
 	int tt_s;
-	int oo1, pp2;
+	int oo1, oo2;
 	String ss;
 	
     public void playerDied(boolean player1) {
@@ -27,9 +27,13 @@ public class WriteIFs
         // Write an IF statement that checks the 
         // "temperature(room)" and if that check is less than 70, 
         // calls "heatOn()" else calls "coolOn()"
+    	
+    	if (temperature(room) < 70) {
+    		heatOn();
+    	} else {
+    		coolOn();
+    	}
 
-
-        
         return this.ss;
     }
 
@@ -40,12 +44,18 @@ public class WriteIFs
         // "InsideTemp()" is less than 62, 
         // calls "StartAFire(fireplace1)"
 
+    	if (outsideTemp() < 50 && insideTemp() < 62) {
+    		startAFire(fireplace1);
+    	}
     }
 
     public void checkFuel(double fuelLevel) {
         // Write an IF statement that checks "fuelLevel"
         // and if that check is less than 0.08, calls "refuel()"
 
+    	if (fuelLevel < 0.08) {
+    		refuel();
+    	}
     }
 
 
@@ -81,7 +91,7 @@ public class WriteIFs
     public boolean isAlive(boolean p) {
         return !p;
     }
-    private int tempurature(int t) {
+    private int temperature(int t) {
         return t+2;
     }
     private void heatOn() {
