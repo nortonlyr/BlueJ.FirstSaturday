@@ -44,8 +44,12 @@ public class WriteIFs
         // "InsideTemp()" is less than 62, 
         // calls "StartAFire(fireplace1)"
 
-    	if (outsideTemp() < 50 && insideTemp() < 62) {
+    	if (outsideTemp() < 50 && insideTemp() < 62)
     		startAFire(fireplace1);
+    	if (outsideTemp() < 50 && insideTemp() == 65) 
+        	startAFire(fireplace1);
+        if (outsideTemp() == 80 && insideTemp() < 62) {
+            startAFire(fireplace1);
     	}
     }
 

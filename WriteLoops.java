@@ -17,10 +17,11 @@ public class WriteLoops {
 
     public int oneToFive() {
         int w = 0;
-
+        for (int i=0; i<5; i++) {
         // Write a FOR loop that counts from 1 to 10.
             // calling
             w = w + 1;
+        }
             // each time through the loop
 
         // this will tell the test how many times the loop executed.
@@ -98,8 +99,8 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 5 to 105. Put an IF
         // statement inside the loop that checks the
-        // loop index counter and if it’s greater than 51,
-        // prints “Hello Zipcode” instead of the statement w = w + 1;
+        // loop index counter and if it's greater than 51,
+        // prints "Hello Zipcode" instead of the statement w = w + 1;
 
                 // calling
                 w = w + 1;
@@ -126,9 +127,9 @@ public class WriteLoops {
         // what's the primary difference between them?!?
     }
 
-    // Write a WHILE loop that checks “gpsCurrentLocation()”
-    // and if that is not equal to “Home” then and it calls “driveSomeMore()”.
-    // After the loop is done, print “Honey, I’m Home!”
+    // Write a WHILE loop that checks "gpsCurrentLocation()"
+    // and if that is not equal to "Home" then and it calls "driveSomeMore()".
+    // After the loop is done, print "Honey, I'm Home!"
     public int driveHome() {
         int w = 0;
 
@@ -143,11 +144,11 @@ public class WriteLoops {
     }
 
     // Getting harder...
-    // First declare and set “highestScore” to 236. Then set “currentScore” to
-    // “gameNextScore()”. Then write a WHILE loop that checks "runningScore"
-    // is less than “highestScore” and if it is, adds “currentScore” to
+    // First declare and set "highestScore" to 236. Then set "currentScore" to
+    // "gameNextScore()". Then write a WHILE loop that checks "runningScore"
+    // is less than "highestScore" and if it is, adds "currentScore" to
     // "runningScore"
-    // and then sets “currentScore” to “gameNextScore()”
+    // and then sets "currentScore" to "gameNextScore()"
     public int checkGameScore() {
         int w = 0;
         int highestScore = 236;
@@ -164,7 +165,7 @@ public class WriteLoops {
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
-    // Notice how the “runningScore” variable usage is different.
+    // Notice how the "runningScore" variable usage is different.
     public boolean checkGameScoreDoWhile() {
         int w = 0;
         int highestScore = 236;
@@ -180,10 +181,10 @@ public class WriteLoops {
         return w >= 3;
     }
 
-    // Write a WHILE loop that checks “serverIsRunning()” and if true
-    // calls “waitFor(5)” After the loop, write an IF and check “serverIsRunning()”
-    // is false, and if so, call “sendEmergencyText(“Help!”, adminPhoneNumber)”
-    // and also calls “tryServerRestart()”
+    // Write a WHILE loop that checks "serverIsRunning()" and if true
+    // calls "waitFor(5)" After the loop, write an IF and check "serverIsRunning()"
+    // is false, and if so, call "sendEmergencyText("Help!", adminPhoneNumber)"
+    // and also calls "tryServerRestart()"
     public int checkServerStatus() {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
@@ -196,9 +197,9 @@ public class WriteLoops {
         return w;
     }
 
-    // Declare an “int” i. Set i to 7.
-    // Write a WHILE loop that checks “i” is less than 50,
-    // and if it is, add 7 to “i”
+    // Declare an "Int" i. Set i to 7.
+    // Write a WHILE loop that checks "i" is less than 50,
+    // and if it is, add 7 to "i"
     public int loop50by7() {
         int w = 0;
 
@@ -267,12 +268,12 @@ public class WriteLoops {
         return w;
     }
 
-    // Declare a boolean “yardNeedsMowed” and initialize to true.
-    // Write WHILE loop that checks for “isSummer()”.
-    // inside the loop, write an IF that checks “yardNeedsMowed” and if true calls
-    // “yellAtJuniorToMowLawn()”
+    // Declare a boolean "yardNeedsMowed" and initialize to true.
+    // Write WHILE loop that checks for "isSummer()".
+    // inside the loop, write an IF that checks "yardNeedsMowed" and if true calls
+    // "yellAtJuniorToMowLawn()"
     // After loop, call
-    // “sendJuniorBackToSchool()” with an argument that decribes the day junior goes
+    // "sendJuniorBackToSchool()" with an argument that describes the day junior goes
     // back.
     public int manageYardAndJunior() {
         int w = 0;
@@ -305,7 +306,7 @@ public class WriteLoops {
     }
 
     // Given an array voteTallies[], write a WHILE loop that prints out each value
-    // in the array. You should declare and use an index “idx” to keep track of
+    // in the array. You should declare and use an index "idx" to keep track of
     // where you are.
     public int tallyVote2() {
         int w = 0;
