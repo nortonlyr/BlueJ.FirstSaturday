@@ -107,7 +107,11 @@ public class WriteLoops {
 
     public int helloZipCode() {
         int w = 0;
-
+        for (int i=5; i<106; i++) {
+        	if(i>51) {
+        		System.out.println("hello Zipcode");
+        	} else {
+        }
         // Write a FOR loop that counts from 5 to 105. Put an IF
         // statement inside the loop that checks the
         // loop index counter and if it's greater than 51,
@@ -116,7 +120,7 @@ public class WriteLoops {
                 // calling
                 w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
 
@@ -143,13 +147,16 @@ public class WriteLoops {
     // After the loop is done, print "Honey, I'm Home!"
     public int driveHome() {
         int w = 0;
+        while (!gpsCurrentLocation().equals("Home")) {
+        	driveSomeMore();
+        
 
         // you need to use a .equals for two Strings.
 
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
 
             return w;
     }
@@ -167,9 +174,13 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
- 
+        while (runningScore < highestScore) {
+        	if (runningScore < highestScore)
             // calling
+        	runningScore += currentScore;
+        	currentScore = gameNextScore();
             w = w + 1;
+        }
             // each time through the inner loop
         
         return w; // >= 3;
