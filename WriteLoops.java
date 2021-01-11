@@ -195,12 +195,15 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
+        do {
+        	runningScore += currentScore;
+        	currentScore = gameNextScore();
+        	w++;
+        } while (runningScore < highestScore);
+        return w >= 3;
 
             // calling
-            w = w + 1;
             // each time through the inner loop
-
-        return w >= 3;
     }
 
     // Write a WHILE loop that checks "serverIsRunning()" and if true
@@ -210,11 +213,17 @@ public class WriteLoops {
     public int checkServerStatus() {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
-        
-
-        // calling
-        w = w + 1;
+        while (serverIsRunning()) {
+        	waitFor(5);
+        	 w = w + 1;
+        }
+     	// calling
         // each time through the inner loop
+        if (!serverIsRunning()) {
+        	
+        	sendEmergencyText("Help!", adminPhoneNumber);
+        	tryServerRestart("Help!", adminPhoneNumber);
+        }
         
         return w;
     }
