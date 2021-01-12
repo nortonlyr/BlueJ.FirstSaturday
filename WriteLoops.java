@@ -67,11 +67,12 @@ public class WriteLoops {
     }
 
     public int byTwoTo32() {
+    	
         int w = 0;
         for (int i = 0; i < 32; i+=2) {
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+        w++;
         }
         // each time through the loop
         return w;
@@ -109,9 +110,9 @@ public class WriteLoops {
         int w = 0;
         for (int i=5; i<106; i++) {
         	if(i>51) {
-        		System.out.println("hello Zipcode");
+        		System.out.println("Hello ZipCode");
         	} else {
-        }
+      
         // Write a FOR loop that counts from 5 to 105. Put an IF
         // statement inside the loop that checks the
         // loop index counter and if it's greater than 51,
@@ -120,6 +121,7 @@ public class WriteLoops {
                 // calling
                 w = w + 1;
             // each time through the inner loop
+        	}
         }
         return w;
     }
@@ -196,12 +198,15 @@ public class WriteLoops {
 
         // do your while loop here
         do {
+        	
         	runningScore += currentScore;
-        	currentScore = gameNextScore();
         	w++;
+        	currentScore = gameNextScore();
+        	
         } while (runningScore < highestScore);
+        
         return w >= 3;
-
+        
             // calling
             // each time through the inner loop
     }
