@@ -175,11 +175,11 @@ public class WriteLoops {
 
         // do your while loop here
         while (runningScore < highestScore) {
-        	if (runningScore < highestScore)
             // calling
         	runningScore += currentScore;
+        	w = w + 1;
         	currentScore = gameNextScore();
-            w = w + 1;
+            
         }
             // each time through the inner loop
         
@@ -236,7 +236,7 @@ public class WriteLoops {
 
 
             // calling
-            w = w + 1;
+        w = w + 1;
             // each time through the inner loop
         
         return w;
@@ -273,7 +273,7 @@ public class WriteLoops {
 
  
             // calling
-            w = w + 1;
+        w = w + 1;
             // each time through the inner loop
         
         System.out.print("The Sum is ");
@@ -290,7 +290,7 @@ public class WriteLoops {
 
  
             // calling
-            w = w + 1;
+        w = w + 1;
             // each time through the inner loop
         
         System.out.print("The Sum is ");
