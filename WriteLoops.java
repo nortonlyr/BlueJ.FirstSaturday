@@ -69,10 +69,10 @@ public class WriteLoops {
     public int byTwoTo32() {
     	
         int w = 0;
-        for (int i = 0; i < 32; i+=2) {
+        for (int i=0; i<=32; i+=2) {
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w++;
+        	w++;
         }
         // each time through the loop
         return w;
@@ -80,11 +80,11 @@ public class WriteLoops {
 
     public int countDownFrom5000() {
         int w = 0;
-        for (int i = 0; i < 5001; i += 11) {
+        for (int i=0; i<5001; i+=11) {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
-        w = w + 1;
+        	w++;
         }
         // each time through the loop
         
@@ -94,12 +94,12 @@ public class WriteLoops {
     public int nestedFors() {
         int w = 0;
         for (int i = 0; i < 20; i++) {
-        	w = w + 1;
+        		w++;
         	for (int j = 0; j < 4; j++) {
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
                 // calling
-                w = w + 1;
+                w++;
         	}
         }
                 // each time through the inner loop
@@ -110,7 +110,7 @@ public class WriteLoops {
         int w = 0;
         for (int i=5; i<106; i++) {
         	if(i>51) {
-        		System.out.println("Hello ZipCode");
+        		System.out.println("Hello Zipcode");
         	} else {
       
         // Write a FOR loop that counts from 5 to 105. Put an IF
