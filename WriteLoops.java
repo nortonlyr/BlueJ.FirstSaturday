@@ -179,7 +179,7 @@ public class WriteLoops {
         while (runningScore < highestScore) {
             // calling
         	runningScore += currentScore;
-        	w = w + 1;
+        	w++;
         	currentScore = gameNextScore();
             
         }
